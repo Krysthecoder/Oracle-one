@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<h3> Alcohol o gasolina esa es la cuestion.</h3>
+<script>
+
+    var tanque = 40;
+    var gasolina = 480;
+    var gasolinaPromedio = gasolina/tanque;
+    
+    document.write("Si un carro con un tanque de " + tanque + " litros, puede recorer " + gasolina + " kms eso nos daria una autonomia de " + Math.round(gasolinaPromedio) + " kms por litro aproximadamente." );
+
+    document.write("<br>")
+    document.write("<br>")
+    document.write("<br>")
+
+    var alcohol = 300;
+    var alcoholPromedio = alcohol/tanque;
+
+    document.write("Sin embargo si utilizamos alcohol podriamos recorrer " + alcohol + " kms con el mismo tanque de " + tanque + " litros, eso nos daria un octanaje de " + alcoholPromedio + " kms por litro.");
+
+    document.write("<br>");
+    document.write("<br>");
+    
+    var promedioGlobal = gasolinaPromedio - alcoholPromedio;
+    document.write("Como resultado tenemos que la gasolina tiene un mejor rendimiento en comparacion del alcohol ya que podriamos viajar " + promedioGlobal + " kms mas por litro.");
+
+</script>
