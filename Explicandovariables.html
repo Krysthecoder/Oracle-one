@@ -1,0 +1,69 @@
+<meta charset="UTF-8">
+
+
+
+<script>
+    document.write("Krysthopher is:" + (2020 -1998) + " years old");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Moises has:" + (2020 - 1995) + " years old");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Fernanda has:" + (2020 - 1996) + " years old");
+</script>
+
+<!--the previos example has to be updated manually however imagining doing this on a database with 9k people-->
+<!--so in that situation what you can do is basically go create a vaiable-->
+<br>
+<br>
+<br>
+<br>
+<h2> This is using variables</h2>
+<br>
+<br>
+<script>
+
+    var year = 2030;
+
+    document.write("Krysthopher is:" + (year -1998) + " years old");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Moises has:" + (year - 1995) + " years old");
+    document.write("<br>");
+    document.write("<br>");
+    year = 2032;  <!--podemos redefinir la misma variable-->
+    document.write("Fernanda has:" + (year - 1996) + " years old");
+</script>
+<br>
+<br>
+<br>
+<br>
+<h2> This is using variables 2 editions</h2>
+<br>
+<br>
+<script>
+
+    year = 2023;
+    var krys = year - 1998; 
+    var fer = year - 1996;
+    var moi = year - 1995;
+
+    document.write("Krysthopher is:" + (year -1998) + " years old");
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("Fernanda has:" + (year - 1996) + " years old");
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("Moises has:" + (year - 1995) + " years old");
+    document.write("<br>");
+    document.write("<br>");
+
+    var promedio = (krys + fer + moi)/3
+    document.write("Nuestras edades sumadas serian:" + (krys + fer + moi) + " years en total.")
+    document.write("<br>")
+    document.write("Sin embargo en promedio tendriamos un total de: " + Math.round(promedio) +" years in total.")
+
+</script>
+
