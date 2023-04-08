@@ -1,0 +1,111 @@
+<meta charset="UTF-8">
+
+<h1>Programa</h1>
+
+<script>
+
+    var year = 2030;
+
+    document.write("Krysthopher is:" + (year -1998) + " years old");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Moises has:" + (year - 1995) + " years old");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Fernanda has:" + (year - 1996) + " years old");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+</script>
+
+<!--la forma anterior es arcaica, ya que si necesitamos meter lineas o otras coasa podemos modificar las variable-->
+
+<h2> Con variables faciles de mantener</h2>
+
+<script>
+    var saltoLineas = "<br><br>"
+
+    document.write("Krysthopher is:" + (year -1998) + " years old");
+    document.write(saltoLineas);
+    
+    document.write("Moises has:" + (year - 1995) + " years old");
+    document.write(saltoLineas);
+    
+    document.write("Fernanda has:" + (year - 1996) + " years old");
+    document.write(saltoLineas);
+
+</script>
+<br>
+<br>
+<br>
+<h1>Funciones</h1>
+
+<script>
+
+    function saltarLineas () {
+        document.write('<br>');
+        document.write('<br>');
+        document.write('<br>');
+    }
+
+    document.write("Krysthopher is:" + (year -1998) + " years old");
+    saltarLineas();
+    
+    document.write("Moises has:" + (year - 1995) + " years old");
+    saltarLineas();
+    
+    document.write("Fernanda has:" + (year - 1996) + " years old");
+
+</script>
+
+<br>
+<br>
+<br>
+<h1>Funciones con paramatros</h1>
+
+<script>
+
+    function saltarLineas () {
+        document.write('<br>');
+        document.write('<br>');
+        document.write('<br>');
+    }
+    function imprimir(frase){
+        document.write(frase);
+    }
+    
+    imprimir("Aca algo chingon");
+    saltarLineas();
+    imprimir("Krysthopher is:" + (year -1998) + " years old");
+    saltarLineas();
+    
+    imprimir("Moises has:" + (year - 1995) + " years old");
+    saltarLineas();
+    
+    imprimir("Fernanda has:" + (year - 1996) + " years old");
+
+</script>
+
+<br>
+<br>
+<br>
+<h1>Funciones con paramatros un anexado</h1>
+
+<script>
+
+    function saltarLineas () {
+        document.write('<br>');
+        document.write('<br>');
+    }
+    function imprimir(frase){
+        document.write(frase);
+        saltarLineas();
+    }
+    
+    imprimir("Aca algo chingon");
+    imprimir("Krysthopher is:" + (year -1998) + " years old");
+    imprimir("Moises has:" + (year - 1995) + " years old");
+    imprimir("Fernanda has:" + (year - 1996) + " years old");
+
+</script>
