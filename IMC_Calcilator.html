@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> Calculadora de IMC</h1>
+    <br>
+    <br>
+<script>
+
+//        function saltarLinea() {
+//            document.write('<br>')
+//            document.write('<br>')
+//            document.write('<br>')
+//            document.write('<br>')
+//        };
+//
+//        function imprimir(frase) {
+//            document.write(frase);
+//            saltarLinea ();
+//        };
+
+//        var krysPeso = 100;
+//        var krysAltura = 1.72;
+//        var imcKrys = krysPeso  / (krysAltura * krysAltura);
+
+//        imprimir ("El IMC de Krysthopher ruiz es:" + imcKrys);
+
+//        var ferPeso = 90;
+//        var ferAltura = 1.65;
+//        var imcfer = ferPeso  / (ferAltura * ferAltura);
+
+//        imprimir ("El IMC de Fernanda ruiz es:" + imcfer);
+
+//    </script>
+<h1> globalizando los paramatros
+</h1>
+<br>
+<br>
+<script>
+
+    function saltarLinea() {
+        document.write('<br>')
+        document.write('<br>')
+    };
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea ();
+    };
+
+    //En seste scenario creamos una funcion que imprime y calcula el imc ya solo ingresamos las variables despues y llamamos la funcion
+    //function calcularIMC(peso,altura, nombre) {
+    //    imc = peso / (altura * altura);
+    //    imprimir("El IMC calculado de " +nombre + " es de " + imc)
+    //}
+
+    ////calcularIMC(100,1.70, "Krysthopher");
+    ////calcularIMC(90,1.65, "Fernanda");
+    ////calcularIMC(80,1.71, "Moises");
+
+    //function calcularImc(peso,altura){
+    //    imc = peso / (altura * altura);
+     //   return imc
+    //}
+
+     //var imcKrys = calcularImc(100,1.70);
+    // var imcFer = calcularImc(80,1.65);
+//
+    ///imprimir("el promedio del IMC calculado de Krys y Fer es: " +  (imcKrys+imcFer)/2)
+
+    function calculaImc(peso,altura){
+        return (peso / (altura * altura));
+    }
+
+    nombre = prompt("Cual es su nombre")
+    pesoInfomado = prompt(nombre + " favor indique su peso (kg): ")
+    alturaInformada = prompt(nombre + " tambien informe su Altura (mts): ")
+
+    imcCalculado = calculaImc(pesoInfomado,alturaInformada);
+    imprimir(nombre + " su imc calculado es: " + imcCalculado);
+
+
+</script>
+</body>
+</html>

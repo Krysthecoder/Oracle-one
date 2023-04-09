@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function saltoLineas (){
+            document.write("<br>")
+        }
+        function titulo() {
+            document.write("<h1>Hola " + nombre + " a continuacion encontrara la infomacion que ha buscado: </h1>")
+            saltoLineas();
+        }
+
+        nombre = prompt("Hola, por favor dinos quien eres:");
+
+        titulo();
+
+        function calcularIMC(peso,altura){
+            return (peso / (altura*altura))
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            saltoLineas();
+            
+            saltoLineas();
+        }
+
+        pesoDeclarado = prompt(" que tal " + nombre + " espero tengas un lindo dia, por favor indicanos tu peso en kg:");
+        alturaDeclarado = prompt(" muchase gracias, ahora indica tu altura en mts:");
+
+        imprimir("Gracias por compartirnos tu informacion, a continuacion veras los detalles y tu IMC calculado.");
+
+        imcCalculado = calcularIMC(pesoDeclarado,alturaDeclarado);
+        imprimir("Con una altura de " + alturaDeclarado + " y un peso de " + pesoDeclarado + " tu IMC aproximado es de: %" + imcCalculado);
+
+    </script>
+</body>
+</html>
