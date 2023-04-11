@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Programa Calculadora de IMC</h1>
+    <br>
+    <br>
+    <script>
+        function saltarLinea() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+        function calculaImc(peso, altura) {
+            return (peso / (altura * altura));
+        }
+
+        nombre = prompt("Cual es tu nombre?");
+        pesoInformado = prompt("hola " + nombre + " por favor indica tu peso en kg.");
+        alturaInformada = prompt ("gracias " + nombre + " ahora por favos dinos tu altura en mts.");
+
+        imcCalculado = calculaImc(pesoInformado,alturaInformada);
+
+        imprimir(nombre + " tu imc calculado es: " + imcCalculado);
+
+        if (imcCalculado < 19.5) {
+            imprimir(" Insuficiente peso corportal por favor visita un medico o echate unas carnitas.");
+        }
+        if (imcCalculado >= 18.5) {
+            if (imcCalculado < 25) {
+                imprimir("Tu peso corporal es saludable, sigue asi y no olvides de ejercitarte!!!");
+            }
+        }
+        if (imcCalculado >= 25 && imcCalculado <= 29.9){
+            imprimir("Estas un poco en sobrepeso, ten cuidado en el alimento y ejercitate aun estas a tiempo!!!");
+        }
+        if (imcCalculado >= 30){
+            imprimir("Te mamaste con los pastelistos ahora toca hacer dieta de la recia y hacer ejercicio, tambien despidete de las alitas a la bbq por un rato.");
+        }
+    </script>
+</body>
+</html>
