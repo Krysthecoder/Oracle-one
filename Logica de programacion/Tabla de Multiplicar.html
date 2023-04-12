@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Programa - Calcular tabla de multiplicacion</h1>
+    <br>
+    <br>
+    <script>
+        function saltarLinea() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+
+        var multiplicante = prompt("Ingresa el numero que quieres multiplicar: ");
+        var multiplicador = 1;
+
+        while (multiplicador <= 12){
+            var resultado = (multiplicador * multiplicante);
+            imprimir("El resultado de " + multiplicante + " por " +  multiplicador + " es: " + resultado);
+            multiplicador = multiplicador + 1;
+        }
+
+    </script>   
+<h1> Multiplicador con while y for</h1>
+<br><br><p>En este caso for</p><br><br>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var multiplicador = 1;
+
+    imprimir("while");
+
+    while (multiplicador <=10){
+        imprimir (5 * multiplicador);
+        multiplicador = multiplicador + 1;
+        
+    }
+
+    imprimir("for");
+
+    for (var multiplicador = 1; multiplicador <= 10; multiplicador = multiplicador + 1){
+        imprimir (5 * multiplicador);
+    }
+
+</script>  
+</body>
+</html>
