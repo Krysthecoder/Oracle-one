@@ -1,0 +1,18 @@
+<canvas width="400" height="400">
+
+</canvas>
+
+<script>
+    var pantalla = document.querySelector('canvas');
+    var pencil = pantalla.getContext('2d');
+
+    pencil.fillStyle = "darkGreen";
+    pencil.fillRect(0,0,350,300);
+
+    pencil.fillStyle = "black";
+    pencil.fillRect(50,60,90,90) //right eye
+    pencil.fillRect(210,60,90,90); //left eye
+    pencil.fillRect(140,150,70,100); //nose
+    pencil.fillRect(140,190,-40,110);//right mustacho
+    pencil.fillRect(210,190,40,110);//left mustacho
+</script>
