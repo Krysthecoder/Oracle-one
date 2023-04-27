@@ -1,0 +1,28 @@
+<canvas width="600" height="400">
+
+</canvas>
+
+<script>
+
+    function dibujarCuadrado (x,y,color){
+        var pantalla = document.querySelector('canvas');
+        var pincel = pantalla.getContext('2d');
+        pincel.fillStyle = color//propiedad o caracteristica usada como variable
+        pincel.fillRect(x,y,50,50);
+        pincel.strokeStyle = "black";
+        pincel.strokeRect(x,y,50,50);
+    }
+
+
+    var cantidad = parseInt(prompt("cuantos Cuadrados?"));
+    var contador = 1;
+
+    while (contador <= cantidad){
+        var posicion = parseInt(prompt("eje X?"));
+        var altura = parseInt(prompt("altura Y?"));
+        var colorimetria = prompt("que color usaras?");
+        dibujarCuadrado (posicion,altura,colorimetria);
+        contador++;
+    }
+
+</script>    

@@ -1,0 +1,41 @@
+<div class="botton>"><h1>resetea</h1></div>
+<style>
+    body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: 'Oxygen', sans-serif;
+    }
+    .botton{
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+    }
+</style>
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var pantalla = document.querySelector('canvas');
+    var pincel = pantalla.getContext('2d');
+
+    pincel.fillStyle = "black";
+    pincel.fillRect(0,0,600,400);
+
+    var color = prompt('Que color deseas?');
+
+    function dibujarCirculo (evento){
+        var x = evento.pageX - pantalla.offsetLeft;
+        var y = evento.pageY - pantalla.offsetTop;
+
+
+        pincel.fillStyle = color;
+        pincel.beginPath();
+        pincel.arc(x,y,10,0,2*3.14);
+        pincel.fill();
+        console.log(x + "," + y);
+    }
+
+    pantalla.onclick = dibujarCirculo;
+    var reset = document.querySelector('botton');
+    reset.onclick = dibujarCirculo;
+</script>
