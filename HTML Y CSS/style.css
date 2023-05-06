@@ -14,9 +14,8 @@ body{
     text-align: center;
     padding: 20px;
 }
-h1{
-    font-size: 2em;
-
+.titulo-principal{
+    padding-left:  30px;
 }
 em strong{
     color: #ff0000;
@@ -35,10 +34,9 @@ em strong{
     list-style: none;
     font-style: italic;
 }
-h2{
+.titulo-centralizado{
     text-align: center;
 }
-
 ul{
     display: inline-block;
     text-align: left;
