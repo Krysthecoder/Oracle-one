@@ -1,50 +1,101 @@
-body{
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-}
 
-#Imagen1{
-    width: 100%;
-    margin: 0;
-    padding: 0;
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
 }
-.principal{
-    background-color:#cccccc;
-    text-align: center;
-    padding: 20px;
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
 }
-.titulo-principal{
-    padding-left:  30px;
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px; 
 }
-em strong{
-    color: #ff0000;
-}
-
-
-#mision{
-    font-size: 1.25em;
-}
-
-.diferenciales{
-    background-color: #ffffff;
-    padding: 30px;
-}
-.items{
+nav li{
     list-style: none;
-    font-style: italic;
+    display: inline;
+    margin: 0 0 0 15px;
 }
-.titulo-centralizado{
-    text-align: center;
+nav a{
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
 }
-ul{
+nav a:hover{
+    color: #c78c19;
+}
+.products{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.products li {
     display: inline-block;
-    text-align: left;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+.products li:hover{
+    border-color: #c78c19;
+}
+.products li:active{
+    border-color: #088c19;
+}
+.products h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.products li:hover h2{
+     font-size: 33px;
+}
+.product-description{
+    font-size: 18px;
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-.imagneDiferencial{
+footer{
+    text-align: center;
+    background: url(./imagenes/bg.jpg);
+    padding: 40px;
+}
+.Copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0 ;
+
+}
+form label, form p{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
     width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
 }
