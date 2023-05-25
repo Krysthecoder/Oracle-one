@@ -1,8 +1,11 @@
-
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 header{
     background-color: #bbbbbb;
     padding: 20px 0;
 }
+
 .caja{
     width: 940px;
     position: relative;
@@ -55,7 +58,7 @@ nav a:hover{
     font-weight: bold;
 }
 .products li:hover h2{
-     font-size: 33px;
+    font-size: 33px;
 }
 .product-description{
     font-size: 18px;
@@ -98,4 +101,61 @@ form label, form fieldset{
 }
 .checkbox{
     margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 15px;
+    transition: 1s all;
+}
+.enviar:hover{
+    background-color: rgba(255, 140, 0, 0.582);
+    color: #000000;
+    transform: scale(1.1);
+}
+table{
+    margin: 40px 40px;
+}
+thead{
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+th, td{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*Home page styles */
+
+.banner{
+    width: 100%;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0 1em;
+    clear: left;
+}
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.utensilios{
+    width: 130px;
+    float: left;
+    margin: 0 20px 20px;
+}
+.imagenDiferencial{
+    width: 60%;
 }
