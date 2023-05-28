@@ -79,11 +79,6 @@ footer{
     font-size: 13px;
     margin: 20px;
 }
-
-main{
-    width: 940px;
-    margin: 0 auto;
-}
 form{
     margin: 40px 0 ;
 
@@ -132,9 +127,14 @@ th, td{
 }
 
 /*Home page styles */
-
 .banner{
     width: 100%;
+}
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
 }
 .titulo-principal{
     text-align: center;
@@ -156,6 +156,84 @@ th, td{
     float: left;
     margin: 0 20px 20px;
 }
-.imagenDiferencial{
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888);
+}
+.mapa p{
+    text-align: center;
+    margin: 0 0 2em;
+
+}
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+.diferenciales{
+    padding: 3em 0;
+    background-color: #888888;
+
+}
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+.items{
+    line-height: 1.5;
+}
+.items::before{
+    content: "✪";
+}
+.items::after{
+    content: ".";
+}
+.items:first-child{
+    font-weight: bold;
+}
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 400;
+}
+.imagen-Diferenciales{
     width: 60%;
+    box-shadow: 10px 10px 30px 15px  #000000;
+    transition: .5s;
+}
+.imagen-Diferenciales:hover{
+    opacity: 25%;
+}
+.video-section{
+    background: linear-gradient(#888888, #000000);
+    padding: 3em 0 3em;
+}
+.video{
+    margin: 0 auto;
+    width: 560px;
+}
+
+@media screen and (max-width: 480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .diferenciales, .imagen-Diferenciales{
+        width: 100%;
+    }
+    .lista-diferenciales{
+        padding-bottom: 50px;
+    }
+    .contenido-diferenciales{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .imagen-Diferenciales:hover{
+        opacity: 100%;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
 }
